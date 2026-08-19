@@ -36,8 +36,8 @@ The analysis included:
 ### Feature distributions
 ![Feature distributions](Images/Air_temperature_dist.png)
 ![Feature distributions](Images/Process_temperature_dist.png)
-![Feature distributions](Images/Rotatonial_speed_dist.png)
-![Feature distributions](Images/Torque_dist.png)
+![Feature distributions](Images/Rotational_speed_dist.png)
+![Feature distributions](Images/Torque.png)
 ## Data Preprocessing
 
 The following preprocessing steps were performed:
