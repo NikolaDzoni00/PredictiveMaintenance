@@ -38,6 +38,9 @@ The analysis included:
 ![Feature distributions](Images/Process_temperature_dist.png)
 ![Feature distributions](Images/Rotational_speed_dist.png)
 ![Feature distributions](Images/Torque.png)
+
+The distributions show that most numerical features have different scales and ranges, which was taken into consideration during preprocessing.
+
 ## Data Preprocessing
 
 The following preprocessing steps were performed:
@@ -47,6 +50,18 @@ The following preprocessing steps were performed:
 - Separated features from the target variable.
 - Split the dataset into training and testing sets.
 - Standardized numerical features where required.
+
+## Correlation Analysis
+
+- A correlation analysis was performed to better understand the relationships between numerical features and the target variable.
+
+- A correlation heatmap was used to identify highly correlated features and to examine how strongly each feature was associated with the target variable.
+
+- Although some features exhibited moderate correlations, no features were removed from the dataset. Since the dataset contains a relatively small number of predictors, all features were retained for model training to preserve potentially useful information.
+
+- The correlation matrix also helped verify that no pair of features exhibited excessive multicollinearity that would justify removing variables before model training.
+
+![Correlation Analysis](Images/Correlation.png)
 
 ## Model Development
 
@@ -67,6 +82,13 @@ The models were evaluated using several classification metrics:
 - F1-score
 - Confusion Matrix
 
+| Model | Accuracy | Precision | Recall | F1-score |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 0.97 | 0.64 | 0.10 | 0.18 |
+| KNN | 0.97 | 0.72 | 0.31 | 0.43 |
+| Decision Tree | 0.97 | 0.81 | 0.19 | 0.31 |
+| Random Forest | 0.89 | 0.22 | 0.93 | 0.36 |
+
 ## Results
 
 The Random Forest model achieved the best overall performance among the evaluated models.
@@ -74,6 +96,15 @@ The Random Forest model achieved the best overall performance among the evaluate
 The results indicate that machine operating conditions such as torque, rotational speed, and tool wear contain useful information for predicting machine failures.
 
 The final model was selected based on its performance across multiple evaluation metrics rather than accuracy alone.
+
+### Confusion matrix of Random Forest
+
+| | Predicted No | Predicted Yes | 
+|---|---|---|
+| **Actual No** | 1711 | 221 |
+| **Actual Yes** | 5 | 63 |
+
+
 
 ## Technologies
 
