@@ -9,6 +9,17 @@ The dataset contains information about different machine operating conditions, i
 The goal of the project is to analyze the relationships between machine parameters and failures, preprocess the data, select relevant features, and develop a machine learning model capable of predicting machine failures.
 
 ## Dataset
+| Feature | Description |
+|---|---|
+| UDI | Unique identifier |
+| Product ID | Product identifier |
+| Type | Type of product |
+| Air temperature [K] | Air temperature |
+| Process temperature [K] | Process temperature |
+| Rotational speed [rpm] | Rotational speed |
+| Torque [Nm] | Torque |
+| Tool wear [min] | Tool wear |
+| Target | Machine failure indicator |
 
 ## Exploratory Data Analysis
 
