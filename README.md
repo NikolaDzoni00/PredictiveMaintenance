@@ -33,7 +33,11 @@ The analysis included:
 - Detecting potential outliers using boxplots
 - Comparing numerical features between machine failure and non-failure cases
 - Investigating relationships between features and the target variable
-
+### Feature distributions
+![Feature distributions](Images/Air_temperature_dist.png)
+![Feature distributions](Images/Process_temperature_dist.png)
+![Feature distributions](Images/Rotatonial_speed_dist.png)
+![Feature distributions](Images/Torque_dist.png)
 ## Data Preprocessing
 
 The following preprocessing steps were performed:
